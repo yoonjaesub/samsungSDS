@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+
+.contents {clear: both; width: 1280px; margin: 0 auto; text-align: center;height: 600px; margin-top: 300px;}
+.login { border-bottom: 1px solid #333; height: 250px; }
+.login input { width: 500px; height: 50px; display: block;  margin: 0 auto; margin-top: 15px; border-radius: 25px; text-align: center;}
+#subm {background-color :lightblue;}
+.find a:first-child::after { content: "|";margin-right: 20px; margin-left: 20px;}
+.find a:last-child::before { content: "|"; margin-left: 20px; margin-right: 20px;}
+.find a { color: black; }

@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.contents {clear: both; width: 1280px; margin: 0 auto; text-align: center;height: 600px; margin-top: 300px;}
+.form { width: 1280px; clear: both; margin: 0 auto; float: left;}
+#inp {width: 480px; height: 50px; margin-top: 15px; }
+.form label { margin-right: 20px;}
+#join_mem {width: 600px; margin-top: 50px; height: 50px; background-color: rgb(190, 214, 221);}
+#join_mem:hover { background-color: rgb(19, 67, 80);}
+.login { border-bottom: 1px solid #333; height: 250px; }
+.input { width: 500px; height: 50px; display: block;  margin: 0 auto; margin-top: 15px; border-radius: 25px; text-align: center;}
+#subm {background-color :lightblue;}
+.find a:first-child::after { content: "|";margin-right: 20px; margin-left: 20px;}
+.find a:last-child::before { content: "|"; margin-left: 20px; margin-right: 20px;}
+.find a { color: black; }
