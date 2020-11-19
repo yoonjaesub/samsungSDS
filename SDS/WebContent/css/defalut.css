@@ -8,8 +8,8 @@
     #point_txt {color: rgb(19, 67, 80);}
     
     /* 헤드부분 /   wrap 포함.  */
-    .wrap { width: 100%; position:absolute;}
-    .hd {  width: 100%; height: 100px; position: fixed;}
+    .wrap { width: 100%;}
+    .hd {  width: 100%; height: 100px; position: fixed; top: 0;}
     .tnb { width: 100%; margin: 0 auto; height: 40px;background-color: rgb(190, 214, 221); }
     .top_menu { width: 1280px; margin: 0 auto; height: 40px;}
     .top_menu li { float:right;}

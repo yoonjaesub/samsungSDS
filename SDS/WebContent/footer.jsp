@@ -6,11 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>삼성 SDS</title>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+    <link rel="stylesheet" href="css/defalut.css">
 </head>
 <body>
-        <footer class="ft">
+<%
+
+
+String userID = null;
+	if(session.getAttribute("userID") != null){
+		
+		userID = (String)session.getAttribute("userID");
+	}
+	int pageNum = 1;
+	if(request.getParameter("pageNum")!=null){
+		pageNum = Integer.parseInt(request.getParameter("pageNum"));
+	}
+%>
+ <footer class="ft">
             <div class="ft_top">
                 <ul>
                     <li id="point_txt">모든 오퍼링 보기</li>
@@ -52,6 +64,5 @@
                 <li>Copyright ©2018 SAMSUNG SDS. All rights reserved.</li>
             </div>
         </footer>
-    </div>   
 </body>
 </html>

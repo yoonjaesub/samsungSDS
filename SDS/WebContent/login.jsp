@@ -12,7 +12,18 @@
 
 </head>
 <body>
-<%@include file ="./header.jsp" %>
+
+<%
+
+
+String userID = null;
+	if(session.getAttribute("userID") != null){
+		
+		userID = (String)session.getAttribute("userID");
+	}
+%>
+<div class="wrap">
+<jsp:include page="header.jsp" flush="false"/>
         <div class="contents">
             <a href="index.jsp" class="logo"><img src="img/logo.png" alt="JScompany"></a>
             <form action="loginAction.jsp" class="login" method="post">
@@ -28,4 +39,7 @@
                 </li>
             </ul>
         </div>
-<%@include file ="./footer.jsp" %>
+    <jsp:include page="footer.jsp" flush="false"/>
+    </div>
+</body>
+</html>

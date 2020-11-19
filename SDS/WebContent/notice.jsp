@@ -24,7 +24,21 @@
     </style>
 </head>
 <body>
-<%@include file ="./header.jsp" %>
+<%
+
+
+String userID = null;
+	if(session.getAttribute("userID") != null){
+		
+		userID = (String)session.getAttribute("userID");
+	}
+	int pageNum = 1;
+	if(request.getParameter("pageNum")!=null){
+		pageNum = Integer.parseInt(request.getParameter("pageNum"));
+	}
+%>
+    <div class="wrap">
+        <jsp:include page="header.jsp" flush="false"/>
         <div class="contents">
            <div class="row" style="margin-top:300px">
            <table style ="text-align:center; border:1px solid #dddddd" >
@@ -62,4 +76,7 @@
 			<% } %>
 			</div>
         </div>
-<%@include file ="./footer.jsp" %>
+       <jsp:include page="footer.jsp" flush="false"/>
+    </div>   
+</body>
+</html>

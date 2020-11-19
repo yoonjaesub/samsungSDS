@@ -10,7 +10,21 @@
     <link rel="stylesheet" href="css/join.css">
 </head>
 <body>
-<%@include file ="./header.jsp" %>
+<%
+
+
+String userID = null;
+	if(session.getAttribute("userID") != null){
+		
+		userID = (String)session.getAttribute("userID");
+	}
+	int pageNum = 1;
+	if(request.getParameter("pageNum")!=null){
+		pageNum = Integer.parseInt(request.getParameter("pageNum"));
+	}
+%>
+    <div class="wrap">
+<jsp:include page="header.jsp" flush="false"/>
         <div class="contents">
             <a href="index.jsp" class="logo"><img src="img/logo.png" alt=""></a>
             <form action="newmemAction.jsp" class="form" method="post">
@@ -25,4 +39,7 @@
                 <input type="submit" value="가입하기" id="join_mem">
             </form>
         </div>
-<%@include file ="./footer.jsp" %>
+       <jsp:include page="footer.jsp" flush="false"/>
+    </div>
+</body>
+</html>

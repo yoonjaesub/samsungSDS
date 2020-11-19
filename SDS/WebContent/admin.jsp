@@ -8,9 +8,21 @@
     <title>삼성 SDS - 정보수정</title>
     <link rel="stylesheet" href="css/defalut.css">
     <link rel="stylesheet" href="css/join.css">
+    <jsp:include page="header.jsp" flush="false"/>
 </head>
 <body>
-<%@include file ="./header.jsp" %>
+
+<%
+
+
+String userID = null;
+	if(session.getAttribute("userID") != null){
+		
+		userID = (String)session.getAttribute("userID");
+	}
+%>
+    <div class="wrap">
+        <jsp:include page="header.jsp" flush="false"/>
         <div class="contents">
             <div class="login_form">
                 <form action="adminAction.jsp" method="post">
@@ -27,4 +39,7 @@
                <a href="delete.jsp" style="color: black; display: block; margin-top: 50px; font-weight: 550;">회원탈퇴</a>
             </div>
         </div>
-<%@include file ="./footer.jsp" %>
+        <jsp:include page="footer.jsp" flush="false"/>
+    </div>   
+</body>
+</html>

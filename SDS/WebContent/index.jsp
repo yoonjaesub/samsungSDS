@@ -8,11 +8,25 @@
     <title>삼성 SDS</title>
     <link rel="stylesheet" href="css/defalut.css">
     <link rel="stylesheet" href="css/main_c.css">
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+   
+    
 </head>
 <body>
-<%@include file ="./header.jsp" %>
+<%
+
+
+String userID = null;
+	if(session.getAttribute("userID") != null){
+		
+		userID = (String)session.getAttribute("userID");
+	}
+	int pageNum = 1;
+	if(request.getParameter("pageNum")!=null){
+		pageNum = Integer.parseInt(request.getParameter("pageNum"));
+	}
+%>
+    <div class="wrap">
+     <jsp:include page="header.jsp" flush="false"/>
         <div class="contents">
             <div class="ban">
                 <a href=""><img src="img/ban1.jpg" alt=""></a>
@@ -74,4 +88,8 @@
                 </ul> 
             </div> 
         </div>
-<%@include file ="./footer.jsp" %>
+        <jsp:include page="footer.jsp" flush="false"/>
+    </div>   
+    
+</body>
+</html>

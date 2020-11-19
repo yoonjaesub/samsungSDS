@@ -21,7 +21,17 @@
     </style>
 </head>
 <body>
-<%@include file ="./header.jsp" %>
+<%
+
+
+String userID = null;
+	if(session.getAttribute("userID") != null){
+		
+		userID = (String)session.getAttribute("userID");
+	}
+%>
+    <div class="wrap">
+        <jsp:include page="header.jsp" flush="false"/>
         <div class="contents">
            <div class="row" style="margin-top:300px;">
            <form method="post" action="writeAction.jsp ">
@@ -48,4 +58,7 @@
            </div>
                    
         </div>
-<%@include file ="./footer.jsp" %>
+        <jsp:include page="footer.jsp" flush="false"/>
+    </div>   
+</body>
+</html>
