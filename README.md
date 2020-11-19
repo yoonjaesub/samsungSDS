@@ -22,7 +22,7 @@
 이미지에 Hover시 opacity 값이 변하도록 설정하였으며, 서서히 변화하는 효과를 주기위해 transition을 적용하였습니다
 ```
 
-<img src="https://github.com/yoonjaesub/samsungSDS/blob/gh-pages/img/footer.PNG" width="800px" height="300px">
+<img src="https://github.com/yoonjaesub/samsungSDS/blob/gh-pages/img/footer.PNG" width="800px" height="200px">
 
 ### Footer
 ```
@@ -39,7 +39,7 @@ Select / where 문을 사용하여 데이터베이스 내에 데이터와 일치
 또한 로그인 시 세션에 값을 저장하도록 하였습니다
 ```
 
-<img src="https://github.com/yoonjaesub/samsungSDS/blob/gh-pages/img/login_nav.PNG" width="800px" height="300px">
+<img src="https://github.com/yoonjaesub/samsungSDS/blob/gh-pages/img/login_nav.PNG" width="800px" height="50px">
 
 ### 로그인 후 nav
 ```
@@ -57,7 +57,7 @@ Select / where 문을 사용하여 데이터베이스 내에 데이터와 일치
 CSS가 미흡한 부분에 대해서 추후 수정 예정입니다.
 ```
 
-<img src="https://github.com/yoonjaesub/samsungSDS/blob/gh-pages/img/remove.PNG" width="800px" height="300px">
+<img src="https://github.com/yoonjaesub/samsungSDS/blob/gh-pages/img/remove.PNG" width="800px" height="150px">
 
 ### 회원탈퇴
 ```
